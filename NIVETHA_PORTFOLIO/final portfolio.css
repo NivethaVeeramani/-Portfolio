@@ -1,0 +1,454 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover{
+    color: blueviolet;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+#home {
+    height: 100vh;
+    background: url('images/cover.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content {
+    color: #fff;
+}
+.home-content h1 {
+    font-size: 3rem;
+    color:dimgrey;
+}
+
+.home-content p{
+    color: dimgray;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.home-content span {
+    color: #ff6347;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-content p{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+.about-content img {
+    width: 150px;
+    border-radius: 50%;
+} */
+
+
+/* About Section */
+#about {
+    background-color: #f0f0f0;
+    padding: 4rem 0;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.about-content:hover {
+    transform: translateY(-5px);
+}
+.about-content img {
+    width: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-content img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 500px;
+    text-align: left;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 1rem;
+}
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+.social-icons a:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Add animation for text appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Education Section */
+#education {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 4rem 0;
+    text-align: center;
+}
+#education h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+.education-timeline {
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.education-item {
+    background-color: white;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* For scroll animation */
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.education-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.education-item h4 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+.education-item p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Timeline Connector */
+.education-item:before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #ff6347;
+    top: 0;
+    left: -30px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.6s ease;
+}
+.education-item:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    top: 10px;
+    left: -36px;
+}
+.education-item.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.education-item.in-view:before {
+    transform: scaleY(1);
+}
+
+
+/* Social Icons */
+.social-icons {
+    margin-top: 1rem;
+}
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+.social-icons a:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Add animation for text appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Projects Section */
+#projects {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.project {
+    position: relative;
+    perspective: 1000px;
+}
+.project-front, .project-back {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.project-front {
+    z-index: 2;
+}
+.project-back {
+    transform: rotateY(180deg);
+}
+.project:hover .project-front {
+    transform: rotateY(-180deg);
+}
+.project:hover .project-back {
+    transform: rotateY(0);
+}
+.project h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.project p {
+    color: #555;
+    font-size: 0.95rem;
+}
+.btn, .read-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn:hover, .read-more-btn:hover {
+    background-color: #e5533d;
+    transform: scale(1.05);
+}
+
+
+
+/* Flip effect using .flipped class */
+.project.flipped .project-front {
+    transform: rotateY(-180deg);
+}
+.project.flipped .project-back {
+    transform: rotateY(0);
+}
+
+
+
+
+
+
+/* Skills Section */
+#skills {
+    background-color: #fafafa;
+    padding: 4rem 0;
+    text-align: center;
+}
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.skill {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.skill:hover {
+    transform: translateY(-5px);
+}
+.skill h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 0.5rem;
+}
+.progress {
+    height: 10px;
+    width: 0;
+    background-color: #ff6347;
+    transition: width 1s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Animated Counter */
+.counter {
+    font-size: 1.2rem;
+    color: #ff6347;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content img {
+        width: 100px;
+    }
+}

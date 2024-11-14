@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Nivetha's Portfolio</title>
+    <link rel="stylesheet" href="final portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>NIVETHA</span></h1>
+            <p>A Passionate Full Stack Engineer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="Passport size photo .jpg" alt="Profile Picture">
+            <div class="about-text">
+                <p>Hello! I’m a Computer Science Engineering fresher with a keen interest in
+                     full-stack development, problem-solving, and artificial intelligence.
+                      I love working on innovative projects that challenge me to learn new skills.</p>
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nivetha25veera@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/NivethaVeeramani" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/nivethaveeramani" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <h3>B.E. in Computer Science and Engineering</h3>
+                <h4>University College of Engineering Tindivanam</h4>
+                <p>2020 - 2024</p>
+                <p>Completed my bachelor's degree with a focus on software development at a prestigious Anna University with 8.1 CGPA.</p>
+            </div>
+            <div class="education-item">
+                <h3>HSC</h3>
+                <h4>St,Philomena's Girls Hr Sec School Tindivanam</h4>
+                <p>2019 - 2020</p>
+                <p>Completed my Higher Secondary Studies Specialized in Maths and Biology with 80.1% .</p>
+            </div>
+            <div class="education-item">
+                <h3>SSLC</h3>
+                <h4>St,Philomena's Girls Hr Sec School Tindivanam</h4>
+                <p>2017 - 2018</p>
+                <p>I did my best an SSLC board exam and Scored 92.4% .</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="85"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="80"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="65"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="65"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="75"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>MySQL</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="85"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <div class="project-front">
+                    <h3>Trust Aware Multi-task Knowledge Graph for Recommendation</h3>
+                    <p>To enhancing the Recommendation Accuracy by integrating Trust graph and Knowledge graph.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="project-back">
+                    <h3>TMKG- Details</h3>
+                    <p>The TMKG utilizes multi-task learning to integrate TG and KG.
+                        It leverages node propagation and aggregation to mine both intra-graph and inter-graph and it
+                        employs Shared cross unit mechanisn to acquire relationship between different layers.
+                    These helps to improve the Accuracy. </p>
+                    <a href="#" class="btn">View Code</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-front">
+                    <h3>A Semi-Supervised Emotion Recognition</h3>
+                    <p>To percisely detect and classify a person's emotional state by Optimal Graph coupled Semi-Supervised learning.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="project-back">
+                    <h3>OGSSL - Details</h3>
+                    <p> The OGSSL model was proposed for EEG-based emotion recognition. 
+                        It combined the optimal graph learning and
+                         the emotional label estimation of unlabeled EEG samples together in a unified framework.</p>
+                    <a href="#" class="btn">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nivetha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="final portfolio.js"></script>
+</body>
+</html>
